@@ -17,6 +17,8 @@ Here are some screenshots of the project:
 <div style="display: flex; justify-content: center; gap: 10px;">
     <img src="static/Images/meanwhile.png" alt="Meanwhile Screenshot" width="250" height="250">
     <img src="static/Images/win2.png" alt="Winner Screenshot" width="250" height="250">
+      <img src="static/Images/hero2.png" alt="Winner Screenshot" width="250" height="250">
+    
 </div>
 
 ## Installation
