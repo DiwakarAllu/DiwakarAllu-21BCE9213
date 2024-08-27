@@ -11,6 +11,14 @@ This project is a turn-based chess-like game implemented using Flask and Socket.
 - Game reset functionality
 - Winner announcement
 
+## Screenshots
+
+Here are some screenshots of the project:
+<div style="display: flex; justify-content: center; gap: 10px;">
+    <img src="static/Images/meanwhile.png" alt="Meanwhile Screenshot" width="250" height="250">
+    <img src="static/Images/win2.png" alt="Winner Screenshot" width="250" height="250">
+</div>
+
 ## Installation
 1. Clone the repository:
     ```bash
