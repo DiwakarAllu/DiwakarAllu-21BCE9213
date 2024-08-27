@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1 id="current-player">Current Player: A</h1>
+    <div id="grid"></div>
+    <p id="selected-character">Selected: None</p>
+    <p id="message"></p>
+    <div id="controls">
+        <button id="L" class="control-button" onclick="move('L')" style="display: none;">L</button>
+        <button id="R" class="control-button" onclick="move('R')" style="display: none;">R</button>
+        <button id="F" class="control-button" onclick="move('F')" style="display: none;">F</button>
+        <button id="B" class="control-button" onclick="move('B')" style="display: none;">B</button>
+        <button id="FL" class="control-button" onclick="move('FL')" style="display: none;">FL</button>
+        <button id="FR" class="control-button" onclick="move('FR')" style="display: none;">FR</button>
+        <button id="BL" class="control-button" onclick="move('BL')" style="display: none;">BL</button>
+        <button id="BR" class="control-button" onclick="move('BR')" style="display: none;">BR</button>
+        <button onclick="startOver()">Start Over</button>
+    </div>
+    <p id="moves-log"></p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>
