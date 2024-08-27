@@ -122,18 +122,23 @@ def move_hero1(row, col, direction, player):
 
 def move_hero2(row, col, direction, player):
     if direction == "FL":
-        row = row + 2 if player == "A" else row - 2
-        col = max(0, col - 2)
+        new_row = row + 2 if player == "A" else row - 2
+        new_col = col - 2
     elif direction == "FR":
-        row = row + 2 if player == "A" else row - 2
-        col = min(4, col + 2)
+        new_row = row + 2 if player == "A" else row - 2
+        new_col = col + 2
     elif direction == "BL":
-        row = row - 2 if player == "A" else row + 2
-        col = max(0, col - 2)
+        new_row = row - 2 if player == "A" else row + 2
+        new_col = col - 2
     elif direction == "BR":
-        row = row - 2 if player == "A" else row + 2
-        col = min(4, col + 2)
-    return row, col
+        new_row = row - 2 if player == "A" else row + 2
+        new_col = col + 2
+    else:
+        return row, col
+    if 0 <= new_row < 5 and 0 <= new_col < 5:
+        return new_row, new_col
+    else:
+        return row, col
 
 def is_valid_move(row, col, player):
     if row < 0 or row > 4 or col < 0 or col > 4:
